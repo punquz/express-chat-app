@@ -1,0 +1,36 @@
+{
+  "name": "express-chat-app",
+  "version": "1.0.0",
+  "description": "a basic chat application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/punquz/express-chat-app.git"
+  },
+  "author": "punkuz shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/punquz/express-chat-app/issues"
+  },
+  "homepage": "https://github.com/punquz/express-chat-app#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "mongoose": "^5.5.11",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0"
+  }
+}

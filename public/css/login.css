@@ -222,4 +222,11 @@ footer .container .text-muted {
   padding-left: 15px;
 }
 
+.btn-facebook {
+    background: #4aa1f3;
+    border-radius: 0;
+    color: #fff;
+    width: 100px;
+}
+
 

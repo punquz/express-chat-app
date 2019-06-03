@@ -104,12 +104,40 @@
                             </div>
 
                             <div class="chat_area">
-                            
+                                <ul id="messages" class="list-unstyled">
+                                    <!-- <li class="left">
+                                        <span class="chat-img1 pull-left">
+                                            <img src="https://placehold.it/300x300" class="img-circle" alt="">
+                                        </span>
+                                        <div class="chat-body1">
+                                            <span class="chat-name">
+                                                Username
+                                            </span>
+                                            <br>
+                                            message body
+                                        </div>
+                                    </li> -->
+                                </ul>
+                                <script id="message-template" type="text/template">
+                                    <li class="left">
+                                        <span class="chat-img1 pull-left">
+                                            <img src="https://placehold.it/300x300" class="img-circle" alt="">
+                                        </span>
+                                        <div class="chat-body1">
+                                            <span class="chat-name">
+                                                {{sender}}
+                                            </span>
+                                            <br>
+                                                {{text}}
+                                        </div>
+                                    </li>
+                                </script>
                             </div>
 
                             <div class="message_write">
                               <form action="#" id="message-form" method="post">
-
+                                <input type="hidden" id="groupName" value="<%= groupName %>">
+                                <input type="hidden" name="sender" id="sender" value="<%=user.username %>">
                                   <textarea class="form-control" name="message" id="msg" placeholder="Type a message"></textarea>
                                   <div class="clearfix"></div>
                                   <div class="chat_bottom">
@@ -187,6 +215,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/group/groupchat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 </body>
 </html>
 

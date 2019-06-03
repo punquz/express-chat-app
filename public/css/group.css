@@ -127,6 +127,11 @@ h3 {
 .chat_area li:last-child {
     padding-bottom: 10px;
 }
+.chat-name{
+    font-size: 17px;
+    font-weight: 600;
+    color: #4aa1f3;
+}
 
 .message_write {
     background: white none repeat scroll 0 0;

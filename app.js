@@ -11,7 +11,7 @@ const path = require("path")
 const util = require('./util/database')
 const flash = require("connect-flash")
 const multer = require('multer')
-
+const {Users} = require('./helpers/Users')
 
 //init express app
 const app = express()
@@ -22,7 +22,7 @@ const server = http.createServer(app)
 //socket setup
 const io = require('socket.io')(server)
  //initialize socket
- require('./socket/groupchat')(io)
+ require('./socket/groupchat')(io, Users)
 
 
 //bodyparser

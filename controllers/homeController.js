@@ -13,6 +13,7 @@ exports.getHome = (req, res, next) => {
             console.log(fil)
             res.render('home', {
                 title: "home page",
+                user: req.user,
                 club,
                 fil
             })

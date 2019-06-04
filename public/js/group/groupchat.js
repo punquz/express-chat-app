@@ -5,11 +5,21 @@ $(document).ready(function(){
     socket.on('connect', ()=>{
         console.log('yea..user connnected')
         let params = {
-            room : room
+            room : room,
+            sender: sender
         }
         socket.emit("join", params, ()=>{
             console.log(`user has joined ${params.room}`)
         })
+    })
+
+    socket.on('usersList', (users)=>{
+        let ol = $('<ol></ol>')
+        users.forEach(u => {
+            ol.append('<p><a id="val" data-toggle="modal" data-target="#myModal">' +u + '</a></p>')
+        })
+        $('#numValue').text(`(${users.length})`)
+        $('#users').html(ol)
     })
 
     socket.on('newMessage', (data)=> {

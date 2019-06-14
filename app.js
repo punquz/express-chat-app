@@ -23,6 +23,7 @@ const server = http.createServer(app)
 const io = require('socket.io')(server)
  //initialize socket
  require('./socket/groupchat')(io, Users)
+ require('./socket/friend')(io)
 
 
 //bodyparser
@@ -84,7 +85,7 @@ app.use(homeRoutes)
 app.use(groupRoutes)
 
 //mongodb connection with mongoose
-mongoose.connect(util.database);
+mongoose.connect(util.database, { useFindAndModify: false });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

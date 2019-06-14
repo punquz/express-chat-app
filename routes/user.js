@@ -2,14 +2,14 @@ const router = require("express").Router()
 const userController = require("../controllers/userController")
 
 
-router.get('/', (req, res, next) => {
-    res.render('index', {
-        title: 'hello'
-    })
-})
+// router.get('/', (req, res, next) => {
+//     res.render('index', {
+//         title: 'hello'
+//     })
+// })
 
 //getSignup Page
-router.get('/signup', userController.getSignUp )
+router.get('/', userController.getSignUp )
 
 //postsignup
 router.post ('/signup', userController.postSignUp)

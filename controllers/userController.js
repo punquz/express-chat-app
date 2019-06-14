@@ -65,7 +65,7 @@ exports.postSignUp = (req, res, next) => {
                 req.flash("success_msg", "You are now registered")
                 // res.redirect("/auth/local-login");
                 console.log(user)
-                res.send("you are registered")
+                res.redirect('/login')
               })
               .catch(err => console.log(err));
           })

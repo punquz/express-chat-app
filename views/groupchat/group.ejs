@@ -40,7 +40,7 @@
                                             </div>
                                             <div class="content">
                                                 <div class="main">
-                                                    <h3 class="name">Username || Fullname</h3>
+                                                    <h3 class="name"><%= user.username %></h3>
                                                     <p class="profession-online">
                                                         <i class="fa fa-circle online" aria-hidden="true"></i>
                                                         Online
@@ -175,9 +175,9 @@
                                     <h3 class="modal-title" id="name"></h3>
                                   </div>
                                   <div class="modal-body">
-                                    <form action="" method="get" id="add_friend">
+                                    <form action="" method="post" id="add_friend">
                                         <input type="hidden" name="receiverName" id="receiverName" value="">
-                                        <input type="hidden" name="sender-name" id="sender-name" value="">
+                                        <input type="hidden" name="sender-name" id="sender-name" value="<%= user.username %>">
                                         <button type="submit" id="friend-add" class="btn add"><i class="fa fa-user"></i> Add Friend</button>
                                         
                                         <a id="nameLink" class="btn ">View Profile</a>
@@ -215,6 +215,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/group/groupchat.js"></script>
+<script src="/js/group/sendRequest.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 </body>
 </html>

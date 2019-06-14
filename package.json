@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/punquz/express-chat-app#readme",
   "dependencies": {
+    "async": "^3.0.1",
     "aws-sdk": "^2.463.0",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
@@ -28,6 +29,7 @@
     "express": "^4.17.1",
     "express-session": "^1.16.1",
     "express-validator": "^5.3.1",
+    "firebase-admin": "^8.1.0",
     "formidable": "^1.2.1",
     "mongoose": "^5.5.11",
     "multer": "^1.4.1",

@@ -345,6 +345,66 @@ member_list li:hover {
 }
 
 
+.nav-label-icon {
+    top: -9px;
+    position: relative;
+    background: red;
+    padding: 2px;
+}
+
+.nav-glyphicon {
+    padding-right: 4px;
+    position: relative;
+    top: 2px;
+}
+
+.dropdown-tag-head {
+    color: white;
+    padding-top: 7px;
+    margin-top: 0px;
+    font-size: 17px;
+}
+
+.dmenu {
+    padding-top: 0px !important;
+}
+
+.dropdown-tag {
+    background: #03A9F4;
+    color: white;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+
+.navbar-login {
+    width: 305px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.drop-name {
+    margin-bottom: 0px;
+}
+
+.dropdown-divider {
+    margin-top: 5px !important;
+    margin-bottom: 14px !important;
+}
+
+.drop-accept {
+    background: #4aa1f3 !important;
+    border: #3bb5ec;
+    color: white !important;
+    text-shadow: none;
+}
+
+#reload{
+    padding: 0px 15px 0px 15px;
+}
+
 
 
 

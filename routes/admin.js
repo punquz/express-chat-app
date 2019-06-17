@@ -7,11 +7,11 @@ const aws = require('../util/s3Upload')
 router.get('/dashboard', adminController.getAdminDashboard)
 
 
-//post upload file
-router.post('/uploadFile', aws.Upload.array('upload1', 1), function(req, res, next){
-    console.log('uploaded')
-    res.send('uploaded')
-})
+// //post upload file
+// router.post('/uploadFile', aws.Upload.array('upload1', 1), function(req, res, next){
+//     console.log('uploaded')
+//     res.send('uploaded')
+// })
 
 //save data to database
 router.post('/dashboard', adminController.postSave)

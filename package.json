@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "a basic chat application",
   "main": "app.js",
+  "engines": {
+    "node": "11.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "start-pro": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +23,9 @@
   "homepage": "https://github.com/punquz/express-chat-app#readme",
   "dependencies": {
     "async": "^3.0.1",
-    "aws-sdk": "^2.463.0",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^2.0.3",
     "cookie-parser": "^1.4.4",
@@ -29,14 +33,11 @@
     "express": "^4.17.1",
     "express-session": "^1.16.1",
     "express-validator": "^5.3.1",
-    "firebase-admin": "^8.1.0",
-    "formidable": "^1.2.1",
+    "helmet": "^3.18.0",
+    "mongodb": "^3.2.7",
     "mongoose": "^5.5.11",
-    "multer": "^1.4.1",
-    "multer-s3": "^2.9.0",
+    "morgan": "^1.9.1",
     "passport": "^0.4.0",
-    "passport-facebook": "^3.0.0",
-    "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
     "socket.io": "^2.2.0"
   }

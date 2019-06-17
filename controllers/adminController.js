@@ -1,6 +1,4 @@
-const mongoose = require('mongoose')
 const Club = require('../models/club')
-const formidable = require('formidable')
 
 
 
@@ -32,17 +30,15 @@ exports.getAdminDashboard = (req, res, next) => {
 
 //save data to database
 exports.postSave = (req, res, next) => {
-    const {club, country, upload1} = req.body
-    console.log(club, country, upload1)
+    const {club, country, imageUrl} = req.body
     const newClub = new Club({
         name: club,
         country,
-        upload1
+        image:imageUrl
     })
     newClub
     .save()
     .then(c => {
-        console.log(c)
         res.render('admin/dashboard')
     })
     .catch(err => console.log(err))

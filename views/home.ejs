@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <% //include ./partials/navbar %>
+        <% include ./partials/navbar %>
   
-<div class="col-md-12">
+<!-- <div class="col-md-12">
    <form action="#" method="post">
        <div class="form-group ad-30" style="margin-top:8px;">
             <div class="input-group search-style">
@@ -21,7 +21,7 @@
             </div>
         </div>
    </form>
-</div>
+</div> -->
   
 <div class="col-md-12">
     <div class="">
@@ -31,7 +31,7 @@
                     <div class="col-md-12">
                         <div class="filter-container">
                             <div class="card">
-                                <form action="/results" method="post">
+                                <!-- <form action="/results" method="post">
                                     <div class="content">
                                         <p class="filter">
                                             FILTER
@@ -46,7 +46,7 @@
                                         <div class="clearfix"></div>
                                         <button class="btn add-apply">Apply</button>
                                     </div>
-                                </form>
+                                </form> -->
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                                 <div class="item col-md-4">
                                     <a href="/group/<%=c.name%>">
                                     <div class="thumbnail">
-                                       <img src="https://s3.amazonaws.com/express-chat/<%=c.image %>"alt="">
+                                       <img src="<%=c.image %>"alt="">
                                         <div class="caption">
                                             <h4><%=c.name%></h4>
                                             
@@ -73,11 +73,11 @@
                                                     </p>
                                                 </div>
                                                 
-                                                <div class="col-xs-12 col-md-6">
+                                                <!-- <div class="col-xs-12 col-md-6">
                                                     <button class="btn add-fav">
                                                         Add To Favorite
                                                     </button>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -97,5 +97,7 @@
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/group/sendRequest.js"></script>
 </body>
 </html>

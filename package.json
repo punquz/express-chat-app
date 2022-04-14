@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/punquz/express-chat-app#readme",
   "dependencies": {
-    "async": "^3.0.1",
+    "async": "^3.2.2",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
